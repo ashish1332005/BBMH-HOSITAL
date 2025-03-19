@@ -1,0 +1,147 @@
+/* General Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+} */
+
+/* Header */
+.header-top {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.header-main {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 2vw;
+    box-shadow: 0px 0.8vh 1.6vh rgba(0, 0, 0, 0.1);
+}
+
+.header-main h1 {
+    margin: 0;
+    color: #00796b;
+}
+
+
+/* Blog Section */
+.blog-section {
+    padding: 3vh 2vw;
+    text-align: center;
+}
+
+.slider{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slider h2{
+    color: transparent;
+    background: linear-gradient(to right , #308c7e,#004d00);
+    -webkit-background-clip: text;
+    font-family:fantasy;
+}
+
+.blog-container {
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    gap: 4vh;
+    padding: 3vh 2vw;
+}
+
+.blog-card {
+    background-color: white;
+    padding: 4vh 2vw;
+    border-radius: 2vh;
+    box-shadow: 0px 0.8vh 1.6vh rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 2vh;
+}
+
+.blog-card h3 {
+    color: #00796b;
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.blog-card p {
+    font-size: 2vh;
+    color: #555;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin-top: 2vh;
+    text-decoration: none;
+    color: white;
+    background-color: #00796b;
+    padding: 1.6vh 2.4vw;
+    border-radius: 1vh;
+}
+
+.blog-card a:hover {
+    background-color: #005f56;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 4vh 2vw;
+    background-color: #00796b;
+    color: white;
+}
+
+/* Responsive Styles for max-width 600px */
+@media (max-width: 600px) {
+    
+    .blog-section {
+        padding: 1vh 2vw;
+        text-align: center;
+    }
+
+
+    .blog-container {
+        /* grid-template-columns: 1fr; */
+        display: inline-block;
+        padding: 4vh 2vw;
+    }
+
+    .blog-card {
+        padding: 4vh 2vw;
+        margin-bottom: 2vh;
+
+    }
+
+    .blog-card h3 {
+        font-size: 2.5vh;
+    }
+
+    .blog-card p {
+        font-size: 1.8vh;
+    }
+
+    .blog-card a {
+        padding: 1.2vh 2vw;
+        font-size: 1.8vh;
+    }
+
+    footer {
+        padding: 4vh 2vw;
+    }
+}

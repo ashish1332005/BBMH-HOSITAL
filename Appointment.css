@@ -1,0 +1,344 @@
+
+.contain{
+    display: inline-block;
+    margin-top: 10vh;
+}
+.head {
+    text-align: center;
+    align-items: center;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.heading{
+    width: 100%;
+    height: 8vh;
+    color: rgb(53, 74,103);
+   font-size: auto;
+   font-family:Cursive;
+   font-weight: 300;
+}
+
+
+.leftsection{
+display: inline-block;
+width: 90vh;
+margin:10px auto auto 10px ;
+
+}
+
+.leftsection h2{
+text-decoration:solid;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.leftsection h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(34, 111, 99);
+}
+.leftsection button{
+    background-color: rgb(89, 146, 199);
+   text-decoration: solid;
+   border: 2px solid black;
+   column-gap: 0cap;
+}
+
+.leftsection span:active{
+    background-color: rgb(197, 48, 107);
+}
+.leftsection span{
+    background-color:rgb(89, 146, 199) ;
+    border: 2px solid black;
+
+    
+}
+
+
+
+.rightsection{
+width:80vh;
+display: inline-block;
+margin: px 0px auto 17px;
+height: 55vh;
+
+}
+.rightsection form div{
+
+    display: inline-block;
+}
+
+.rightsection button:hover{
+    background-color: rgb(197, 48, 107);
+}
+.rightsection button{
+ display: block;
+ background-color: 
+ rgb(89, 146, 199) ;
+}
+
+ .appointementSection{
+    font-size: 48px;
+
+background-size: cover;
+background-position: center; 
+background-repeat: no-repeat; 
+background-attachment: fixed; 
+
+   
+}
+
+
+.rightsection form input,
+.rightsection form select,
+.rightsection form button {
+    width: 100%; /* Increase width */
+    max-width: 500px; /* Adjust as needed */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  
+    .leftsection, .rightsection {
+        width: 95%;
+       
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: auto;
+        padding-top: 1vh;
+        text-align: center;
+
+    }
+
+   .rightsection form div{
+    display: block;
+ 
+   }
+  
+   .rightsection span button{
+    display: block;
+  }
+  .rightsection form input,
+  .rightsection form select,
+  .rightsection form button {
+      width: 100%; /* Increase width */
+      max-width: 500px; /* Adjust as needed */
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+    .head {
+        text-align: center;
+       justify-content: center;
+       margin-top: 5vh;
+    }
+    .contain{
+        margin-top: 0;
+    }
+    .rightsection{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .leftsection button{
+        margin-bottom: 4vh;
+    }
+    .leftsection, .rightsection {
+        width: 100%;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heading {
+        font-size: clamp(14px, 3vw, 18px);
+    }
+     .rightsection span button{
+      display: block;
+    }
+    
+   .rightsection form div{
+    display: block;
+ 
+   }
+   .rightsection button{
+    align-items: center;
+   }
+   .rightsection form input,
+   .rightsection form select,
+   .rightsection form button {
+       width: 100%; /* Increase width */
+       max-width: 500px; /* Adjust as needed */
+       padding: 12px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       margin-top: 8px;
+   }
+}
+/* Responsive Layout for 1000px - 1400px */
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .contain{
+        display: flex;
+    }
+
+    .leftsection, .rightsection {
+        width: 48%; /* Adjust width to fit properly */
+        margin: 10px 1%; /* Adjust spacing */
+        height: auto; /* Let it scale properly */
+    }
+
+    .leftsection h1, .leftsection h2 {
+        font-size: 2vw; /* Scalable font size */
+    }
+
+    .rightsection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightsection form {
+        width: 100%;
+    }
+
+    .rightsection form input,
+    .rightsection form select,
+    .rightsection form button {
+        width: 90%;
+        max-width: 450px;
+    }
+
+    .heading {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+}#toggleBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #1e9bff, #0072ff);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 36px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.4);
+    z-index: 9999;
+    overflow: hidden;
+    position: fixed;
+}
+
+/* Hover Effects */
+#toggleBtn:hover {
+    background: linear-gradient(135deg, #0072ff, #1e9bff);
+    box-shadow: 0px 8px 20px rgba(0, 91, 187, 0.6);
+    transform: translateY(-3px);
+}
+
+/* Click Effect */
+#toggleBtn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 10px rgba(0, 91, 187, 0.3);
+}
+
+/* Arrow Icon */
+#toggleBtn i {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-right: 3px solid currentColor;
+    border-bottom: 3px solid currentColor;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Rotate arrow on hover */
+#toggleBtn:hover i {
+    transform: rotate(225deg) translateX(5px);
+}
+
+/* Animation Effect */
+@keyframes pulse {
+    0% { box-shadow: 0 0 15px rgba(3, 16, 29, 0.4); }
+    50% { box-shadow: 0 0 25px rgba(0, 123, 255, 0.7); }
+    100% { box-shadow: 0 0 15px rgba(133, 140, 147, 0.4); }
+}
+
+#toggleBtn:hover {
+    animation: pulse 1.5s infinite;
+}
+
+
+/* Hide appointment section by default
+#appointmentSection {
+    display: none;
+    transition: all 0.1s ease-in-out;
+  
+ 
+    overflow-y: scroll;
+    overflow-x:none ;
+} */
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vh;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.video-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1;
+    padding: 20px;
+}
